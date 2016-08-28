@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mohammed.hatoon.hadeety.MainActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edEmailLogin"
+        android:layout_marginTop="83dp"
+        android:drawableLeft="@drawable/mail"
+        android:background="@drawable/border"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:hint="Email"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edPasswordLogin"
+        android:drawableLeft="@drawable/lock"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:hint="Password"
+        android:layout_below="@+id/edEmailLogin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:id="@+id/butSignin"
+        android:background="@drawable/button"
+        android:layout_below="@+id/edPasswordLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+       />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in with Google"
+        android:id="@+id/butGoogleSignin"
+        android:background="@drawable/gbutton"
+        android:backgroundTint="#DC4E41"
+        android:textColor="#ffffff"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:drawableRight="@drawable/google"
+        android:layout_marginTop="69dp"
+        android:layout_below="@+id/butSignin"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in with twitter"
+        android:id="@+id/butTwitterSignin"
+        android:background="@drawable/tbutton"
+        android:layout_below="@+id/butGoogleSignin"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textColor="#FFFFFF"
+        android:drawableRight="@drawable/twitter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:id="@+id/tvForgotPass"
+        android:layout_alignTop="@+id/tvSignup"
+        android:layout_toLeftOf="@+id/butSignin"
+        android:layout_toStartOf="@+id/butSignin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:id="@+id/tvSignup"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_below="@id/butTwitterSignin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+
+        />
+
+</RelativeLayout>
